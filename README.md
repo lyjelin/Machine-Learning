@@ -51,3 +51,21 @@ By transforming the input variables in roughly same range, we can **speed up gra
 Because θ descends quickly on small ranges and slowly on large ranges
 
 _\+ Octave tutorial by Prof. Ng was the most detailed and well explained programming lectures I've ever attended before throughout my whole University life :ㅇ_
+
+### Week 3
+
+> 
+- Decision Boundary (linear & non-linear)
+- Logistic Regression
+- Classification (binary, multi-class)
+- Overfitting
+
+Linear Regression에 사용한 cost function을 그대로 사용하면 그래프 모양 $\neq$ convex
+
+Optimization algorithm 사용 이유 
+$\to$ $\alpha$ manually select 안해줘도 됨
+$\to$ but, 디버깅이 복잡하다
+
+Actually, the ~~slightly~~ varying cost function for linear/logistic regression needed some time to digest. As well as $regularization\ \& \ cost\ function$ part too
+
+Note : 퀴즈 1회차 도전 실패하고 8시간 기다려서 넘어갔다 (Logistic Regression ~ cost function ~ Gradient descent 부분 확실히 짚고 넘어갈 것)
