@@ -25,3 +25,29 @@ But it has been 1 year since I took it, so I decided to attend Coursera's ML cou
 
 1주차 강의에는 가장 기초적인 개념들을 꼼꼼하게 설명하고 퀴즈로 다지기까지 땅땅 해주셨다. 학교에서 머신러닝 수업을 들을 때 이 부분이 은근 정리가 안됬었던 부분이라 과제하고 시험 칠 때 조금 해맸었는데... _~~우리 교수님이 설명을 못하셨던 걸까~~_
 
+### Week 2
+
+> 
+- Gradient descent (multivariate)
+- Feature scaling 
+- Mean Normalization
+
+2주차 강의들을 들으면서 작년 수업 때 헷갈렸던 개념들이 확확 이해되서 놀랐다. 그냥 외운다기보다, 왜 이 공식이 필요하고 사용한다면 어떤 benefit이 있는지도 같이 이해할 수 있어서!
+
+_~~또, 분명 이해했다고 생각했던 feature scaling이 마지막 퀴즈 부분에서 '잘' 이해하고 넘어간 게 아니라는 걸 알 수 있어서 다행...~~_
+
+#### Feature Scaling && Mean normalization
+
+- Feature scaling : **dividing the input values by the range (max - min)** of the input variable
+- Mean normalization : **replace $x_i$ into $x_i$ - $u_i$** to make features have approx. zero mean (where $u_i$ is the avg. feature of all the values for $feature (i)$)
+- Learning rate
+
+`Q : Why do we need it?`
+
+By transforming the input variables in roughly same range, we can **speed up gradient descent**
+
+`Q : How is it acheived?` 
+
+Because θ descends quickly on small ranges and slowly on large ranges
+
+_\+ Octave tutorial by Prof. Ng was the most detailed and well explained programming lectures I've ever attended before throughout my whole University life :ㅇ_
