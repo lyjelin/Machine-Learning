@@ -69,3 +69,13 @@ $\to$ but, 디버깅이 복잡하다
 Actually, the ~~slightly~~ varying cost function for linear/logistic regression needed some time to digest. As well as $regularization\ \& \ cost\ function$ part too
 
 Note : 퀴즈 1회차 도전 실패하고 8시간 기다려서 넘어갔다 (Logistic Regression ~ cost function ~ Gradient descent 부분 확실히 짚고 넘어갈 것)
+
+### Week 4
+
+> 
+- Nerual Network
+- Application (linear/non-linear/multi-class classification)
+
+이번 챕터들(?)은 크게 어렵거나 복잡하지 않았다. But, just be careful on numbers! 
+
+
