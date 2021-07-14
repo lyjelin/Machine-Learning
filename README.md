@@ -78,4 +78,39 @@ Note : 퀴즈 1회차 도전 실패하고 8시간 기다려서 넘어갔다 (Log
 
 이번 챕터들(?)은 크게 어렵거나 복잡하지 않았다. But, just be careful on numbers! 
 
+### Week 5
+
+> 
+- Cost Function
+- Back Propagation
+- Gradient checking ($DVec$ $\approx$ $gradApprox$)
+- Random Initialization $\to$ break symmetry
+- Training NN Model
+
+`Q : Why Back Propagation was introduced?`
+
+Because Foward Propagation is not efficient in neural network. (Too slow, and require a lot of calculation)
+
+`Q : How to Set & Train NN?`
+
+1. Pick network architecture (# layers, # units)
+	- \# input units = dimention of features $x^{(i)}$
+    - \# output units = # classes
+    - \# hidden units per layer = More da better!
+    Default : at least 1 hidden layer, same # of hidden layer units
+2. Training NN
+	1. Initialize with Random weights
+    2. Forward Propagation to get $h_{\theta}(x^{(i)})$ for any x^{(i)}
+    3. Implement cost function, $J(\theta)$
+    4. Back Propagation for $\frac{\delta}{\delta \Theta}J(\Theta)$
+    5. Use Gradient checking (`DVec` = `gradApprox`
+    6. Use Gradient descent or advanced optimization function to minimize the cost function 
+    
+```
+for i = 1:m,
+   Perform forward propagation and backpropagation using example (x(i),y(i))
+   (Get activations a(l) and delta terms d(l) for l = 2,...,L
+```
+
+
 
