@@ -112,5 +112,55 @@ for i = 1:m,
    (Get activations a(l) and delta terms d(l) for l = 2,...,L
 ```
 
+### Week 6
+
+ML **diagnostic** - How to choose best learning algorithm 
+
+> 
+- Divide Datasets (Train/Validation/Test)
+- Overfitting & Uncerfitting in relation to `Bias` && `Variance`
+
+#### Evaluate new hypothesis
+
+1. Training + Test Set
+	- Learn $\theta$ + minimize $J_{train}(\theta)$
+    - Error function to test $J_{test}(\theta)$ : gives proportion of misclassified test data
+2. Model + Datasets (Training + Validation + Test)
+	- Try range of different degree of polynomials for $h_{\theta}(x)$ 
+    - Split datasets into 3 purposes; (i) train (ii) validation (iii) test
+
+``` Training error tends to decrease as d (degree of polynomial) increase ... may lead to overfitting```
+
+#### In terms of Bias VS Variance
+
+3. High `select(Bias, Variance)`
+	1. High Bias = **underfitted** (Check `Left` side of graph)
+		- $J_{train}(\theta)$  will be high 
+    	- $J_{val}(\theta) \approx J_{test}(\theta)$  
+	2. High Variance = **overfitted** (Check `Right` side of graph)
+		- $J_{train}(\theta)$  will be low 
+    	- $J_{val}(\theta) >>> J_{test}(\theta)$  
+4. Redularization && select(`Bias`, `Variance`)
+	- Try range of $\lambda$ for $J(\theta)$
+    - With the $\Theta^{(x)}$, check the $J_{val}(\Theta^{(x)})$
+    - Choose the one with lowest $J_{val}(\Theta^{(x)})$
+    - Test selected $\Theta^{(x)}$ with $J_{test}(\Theta^{(x)})$
+  
+	1. Large $\lambda \to$ High Bias $\to$ Underfit
+    2. Small $\lambda \to$ High Variance $\to$ Overfit
+    ($\lambda$ = regularization parameter)
+5. Learning Curves
+	- High Bias : Not helpful to get more training datasets
+    	- Low training datasets : Causes $J_{train}(\Theta^{(x)})$ to be low && $J_{val}(\Theta^{(x)})$ to be high
+        - Large training datasets : Causes both $J_{train}(\Theta^{(x)})$ && $J_{val}(\Theta^{(x)})$ to be high
+    - High Variance : Helpful to get more training datasets
+    	- Low training datasets : Causes $J_{train}(\Theta^{(x)})$ to be low && $J_{val}(\Theta^{(x)})$ to be high
+        - Large training datasets : Causes $J_{train}(\Theta^{(x)})$ increase with training set but $J_{val}(\Theta^{(x)})$ continues to decrease
+
+Overfitting problem $\to$ fails to generalize to new samples
+
+
+
+
 
 
