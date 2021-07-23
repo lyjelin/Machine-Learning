@@ -118,7 +118,9 @@ ML **diagnostic** - How to choose best learning algorithm
 
 > 
 - Divide Datasets (Train/Validation/Test)
-- Overfitting & Uncerfitting in relation to `Bias` && `Variance`
+- `Bias` && `Variance` Tradeoff
+- ML problem solving approach
+- Precision & Recall & F1-score
 
 #### Evaluate new hypothesis
 
@@ -156,11 +158,20 @@ ML **diagnostic** - How to choose best learning algorithm
     - High Variance : Helpful to get more training datasets
     	- Low training datasets : Causes $J_{train}(\Theta^{(x)})$ to be low && $J_{val}(\Theta^{(x)})$ to be high
         - Large training datasets : Causes $J_{train}(\Theta^{(x)})$ increase with training set but $J_{val}(\Theta^{(x)})$ continues to decrease
+        
+#### Neural Networks
+
+6. Small/Large Neural Networks
+- Small : Fewer parameters - more prone to underfitting - cheaper
+- Large : More parameters - more prone to overfitting - expensive
 
 Overfitting problem $\to$ fails to generalize to new samples
 
+#### Precision, Recall, F1-score
 
+= Used to handle skewed Data ( TP | FP | FN | TN )
 
-
-
+- Precision (P) = $\frac{TP}{# \ predicted \ positives}$
+- Recall (R) = $\frac{TP}{# \ actual \ positives}$
+- F1-score = $\frac{2PR}{P+R}$
 
