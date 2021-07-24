@@ -219,5 +219,31 @@ PCA $\neq$ Linear Regression
 
 **Don't use PCA to prevent overfitting problem**
 
+### Week 9
+
+> 
+- Detecting Anomaly
+- Multivariate Gaussian Distribution
+- Recommender System `추천시스템` 
+
+i.e. Set Model $p(x)$, 
+- if $p(x) < \epsilon \to$ flag `anomaly`
+- if $p(x) \ge \epsilon \to$ `OK`
+
+#### Gaussian Distribution 
+`Density Formula` : $p(x; \mu , \sigma^2)$ = $\frac{1}{\sqrt{2 \pi} \sigma}$ $\cdot$ $exp(-\frac{(x - \mu)^2}{2 \sigma^2})$
+
+`Mean` : $\mu$ = $\frac1m\sum^m_{i=1}x^{(i)}$, `Standard Deviation` : $\sigma^2$ = $\frac1m\sum^m_{i=1}(x^{(i)}-\mu)^2$
+
+#### Anomaly Detection Algorithm
+
+1. Choose features $x^{(i)}$
+2. Fit parameters $\mu_1, ..., \mu_n$, $\sigma^2_1, ..., \sigma^2_n$
+3. Compute $p(x)$ with new $x^{(i)}$ :
+$\prod^n_{j=1}p(x; \mu , \sigma^2) = \prod^n_{j=1} \frac{1}{\sqrt{2 \pi} \sigma_j}$ $\cdot$ $exp(-\frac{(x - \mu_j)^2}{2 \sigma^2_j})$
+4. Anomaly if $p(x) < \epsilon$
+
+\+ Anomaly Detection is useful if we have very **small** number of positive examples ($y=1$) && **large** number of negative examples
+
 
 
