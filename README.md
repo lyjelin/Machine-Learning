@@ -175,3 +175,21 @@ Overfitting problem $\to$ fails to generalize to new samples
 - Recall (R) = $\frac{TP}{# \ actual \ positives}$
 - F1-score = $\frac{2PR}{P+R}$
 
+### Week 7
+
+> 
+- Support Vector Machine $\approx$ Large Margin Classifier
+- Kernel (Linear, Gaussian, etc.)
+
+
+SVM $\leftarrow$ supervised learning model for classification & regression problems
+
+```The Goal of SVM = create optimal decision boundary (hyperplane) ```
+
+The distance from the hyperplane to closest data point is the `margin` of the classifier.
+
+**Kernel** is a method of using a linear classifier to solve a non-linear problem
+
+Through kernel and similarity function, it allows the non-linearly seperated data to transform as linearly seperated data on feature space of higher dimension (i.e. map from 1D $\to$ 2D)
+
+
