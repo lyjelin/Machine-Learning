@@ -245,5 +245,23 @@ $\prod^n_{j=1}p(x; \mu , \sigma^2) = \prod^n_{j=1} \frac{1}{\sqrt{2 \pi} \sigma_
 
 \+ Anomaly Detection is useful if we have very **small** number of positive examples ($y=1$) && **large** number of negative examples
 
+### Week 10
 
+#### Gradient Descent
+
+> 
+- Batch Gradient Descent
+- Stochastic Gradient Descent
+- Mini-batch Gradient Descent
+
+#### Online Learning
+
+Online Learning is useful as it can adapt on varying users
+
+> 
+- Multiple Machines
+- Multiple Core Machines - Less latency then using multiple machines
+
+For Large scale ML $\to$ Map reduce && Summation is used to speed up learning algorithm. 
+If we are parallizing over multiple machines, the training sets will be splitted according to the number of machines used. And have each of the machines compute the sum of Cost function $J_{train}(\theta)$ for subdivided training sets of data. Then, the partial derivative terms will be computed by $\frac{\delta}{\delta \theta_j}J_{train}(\theta)$. These terms will be send to centralized server and the server adds up to get **overall cost function** && **overall partial derivatives**.
 
