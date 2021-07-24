@@ -192,4 +192,32 @@ The distance from the hyperplane to closest data point is the `margin` of the cl
 
 Through kernel and similarity function, it allows the non-linearly seperated data to transform as linearly seperated data on feature space of higher dimension (i.e. map from 1D $\to$ 2D)
 
+### Week 8
+
+> Unsupervised Learning
+- K-mean
+- PCA
+
+K-mean algorithm is `Clustering of closely packed unlabeled data points`. 
+1. Randomly initialize K-cluster centroids ($u_1, u_2, ..., u_k$)
+2. Repeat (until $u_k$ doesn't change)
+
+	for i = 1 to m :
+		c(i) := index (from 1 to k) of cluster centroid closest to x^(i)
+    for k = 1 to K :
+    	u_k := average points assigned to cluster k
+
+3. Pick centroid that gives lowest $J(C^{(1)}, ..., C^{(m)}, u_1, ..., u_k)$
+
+\+ ㄱr끔 노동이 필요할 때도 있다 : For choosing # of clusters... 
+
+Principle Componenet Analysis (i) reduces dataset from $n$-Dimension to $k$-Dimension (ii) Compute the `covariance matrix` (iii) Computer `eigenvectors` of matrix $\Sigma$ (This is not $\sum$ symbol)
+
+PCA $\neq$ Linear Regression
+- PCA는 trying to reduce the distance between best-fit line & data point(s)
+- Linear Regression은 trying to find the best-fit line
+
+**Don't use PCA to prevent overfitting problem**
+
+
 
