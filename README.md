@@ -265,3 +265,23 @@ Online Learning is useful as it can adapt on varying users
 For Large scale ML $\to$ Map reduce && Summation is used to speed up learning algorithm. 
 If we are parallizing over multiple machines, the training sets will be splitted according to the number of machines used. And have each of the machines compute the sum of Cost function $J_{train}(\theta)$ for subdivided training sets of data. Then, the partial derivative terms will be computed by $\frac{\delta}{\delta \theta_j}J_{train}(\theta)$. These terms will be send to centralized server and the server adds up to get **overall cost function** && **overall partial derivatives**.
 
+## Week 11
+
+> Photo OCR
+
+## Complete :D
+
+> 
+1. Supervised Learning
+2. Unsupervised Learning
+3. Applications && tips
+
+약 3달 코스를 끝냈다! ~~사실 교수님 목소리 너무 자장가같아서 다시 재생한게 약 40%...~~ 물론 계속 remind 하려면 필요할때마다 다시 강의듣기 해야겠지만, 머신러닝 basic 정리를 다시 해서 처음 배웠을 때보단 머리에 든게 많아지고 탄탄해진 느낌..? 
+
+![](https://images.velog.io/images/elin16/post/b44157d5-e24b-4d8c-a093-f8e88ecb496b/ML-AN-ThankYou.png)
+
+(강의 완료하고 Thank you message를 보니까 뭔가 뿌듯)
+
+
+
+
