@@ -265,7 +265,7 @@ Online Learning is useful as it can adapt on varying users
 For Large scale ML $\to$ Map reduce && Summation is used to speed up learning algorithm. 
 If we are parallizing over multiple machines, the training sets will be splitted according to the number of machines used. And have each of the machines compute the sum of Cost function $J_{train}(\theta)$ for subdivided training sets of data. Then, the partial derivative terms will be computed by $\frac{\delta}{\delta \theta_j}J_{train}(\theta)$. These terms will be send to centralized server and the server adds up to get **overall cost function** && **overall partial derivatives**.
 
-## Week 11
+### Week 11
 
 > Photo OCR
 
